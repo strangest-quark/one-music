@@ -8,7 +8,7 @@ Pre-requisites: serverless
 
 ##Run
     #for local testing
-    serverless offline  
+    serverless wsgi serve 
     
 ## Deploy
 Do aws configure before run
