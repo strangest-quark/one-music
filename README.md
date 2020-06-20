@@ -1,7 +1,7 @@
 # One Music
 
 ## Setup
-Pre-requisites: serverless
+Pre-requisite - [serverless](https://www.serverless.com/framework/docs/getting-started/)
 
     cd one-music
     npm install
