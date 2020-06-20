@@ -18,3 +18,5 @@ Do aws configure before run. For deploying to lambda+api-gateway
     
     serverless deploy 
     
+## Test
+https://rx00516zgh.execute-api.us-west-2.amazonaws.com/dev/
