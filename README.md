@@ -9,7 +9,7 @@ Pre-requisite - [serverless](https://www.serverless.com/framework/docs/getting-s
 ## Run
 For local testing
     
-    serverless offline  
+    serverless wsgi serve  
     
 ## Deploy
 Do aws configure before run. For deploying to lambda+api-gateway
