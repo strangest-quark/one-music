@@ -7,12 +7,14 @@ Pre-requisites: serverless
     npm install
 
 ## Run
-    #for local testing
+For local testing
+    
     serverless offline  
     
 ## Deploy
 Do aws configure before run
 
-    # for deploying to lambda+api-gateway
+For deploying to lambda+api-gateway
+    
     serverless deploy 
     
