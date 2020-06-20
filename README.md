@@ -1,12 +1,12 @@
 # One Music
 
-##Setup
+## Setup
 Pre-requisites: serverless
 
     cd one-music
     npm install
 
-##Run
+## Run
     #for local testing
     serverless offline  
     
