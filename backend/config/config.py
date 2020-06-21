@@ -9,8 +9,8 @@ class Config(object):
     PLAYLIST_API_ENDPOINT = "{}/playlists"
 
     #  Client Keys
-    CLIENT_ID = "6d48227f162e4ce2a90bbf26de9e5237"
-    CLIENT_SECRET = "283efbd6be4044e58198e30fd906ce2f"
+    CLIENT_ID = "**"
+    CLIENT_SECRET = "**"
 
     CALLBACK_URL = "https://rx00516zgh.execute-api.us-west-2.amazonaws.com/dev"
     CLIENT_SIDE_URL = "https://one-music.netlify.app"
