@@ -1,16 +1,24 @@
 <template>
  <div class="Home">
    <template v-if="this.user">
+      <div class="row">
+      <div class="col-sm-6 spotify-column-res">
+        <div class="res-content">
       <h1>Hi there, {{ this.user.display_name }}</h1>
-      <img :src="this.user.images[0].url" alt="profile_picture" class="profile_pic">
-      <p>Email address: {{ this.user.email }}</p>
+      <!--img :src="this.user.images[0].url" alt="profile_picture" class="profile_pic"-->
       <p>
         <a :href="this.user.external_urls.spotify">Link to your profile</a>
       </p>
       <p>Number of followers: {{ this.user.followers.total }}</p>
       <p>
-        <button v-on:click="logOut()" class="btn btn-primary">Log out</button>
+        <button v-on:click="logOut()" class="btn btn-primary btn-dark">Log out</button>
       </p>
+        </div>
+      </div>
+      <div class="col-sm-6 youtube-column">
+        <svg class="youtube-icon" xmlns="http://www.w3.org/2000/svg" width="20%" height="20%" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+      </div>
+      </div>
     </template>
     <template v-else>
       <div class="row">
@@ -44,6 +52,7 @@ export default {
         },
         created() {
             if (this.$route.query) {
+                console.log(this.$route.query)
                 Vue.axios.get('https://api.spotify.com/v1/me', {
                     headers: {
                         'Authorization': 'Bearer ' + this.$route.query.access_token
@@ -70,6 +79,18 @@ export default {
 }
 .spotify-column:hover {
     background: #1fb954;
+}
+
+.spotify-column-res {
+    background: #1fb954;
+    align-items: center;
+    text-align: center;
+}
+
+.res-content {
+  position: absolute;
+  top: 40%;
+  left: 35%;
 }
 
 .spotify-icon {

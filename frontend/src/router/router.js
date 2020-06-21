@@ -13,6 +13,6 @@ export default new Router({
             meta: {
                 title: 'One Music',
             },
-        },
+        }
     ]
 });

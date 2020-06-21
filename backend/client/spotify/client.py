@@ -21,10 +21,7 @@ def get_spotify_auth_header(callback_payload):
     token_type = response_data["token_type"]
     expires_in = response_data["expires_in"]
 
-    # Auth Step 6: Use the access token to access Spotify API
-    authorization_header = {"Authorization": "Bearer {}".format(access_token)}
-
-    return authorization_header
+    return access_token, refresh_token, expires_in
 
 
 def get_profile_data(authorization_header):
