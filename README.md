@@ -3,7 +3,7 @@
 ## Setup
 Pre-requisite - [serverless](https://www.serverless.com/framework/docs/getting-started/)
 
-    cd one-music
+    cd one-music/backend
     npm install
 
 
