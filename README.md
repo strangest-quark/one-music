@@ -20,3 +20,4 @@ Do aws configure before run. For deploying to lambda+api-gateway
     
 ## Test
 https://rx00516zgh.execute-api.us-west-2.amazonaws.com/dev/
+https://one-music.netlify.app/
