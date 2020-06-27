@@ -1,2 +1,73 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pangolin&display=swap');
+
+h1{
+    font-family: 'Pangolin', cursive;
+  }
+  
+  button{
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .row{
+    height: 100vh;
+  }
+  .spotify-column {
+      background: #000000;
+      align-items: center;
+      text-align: center;
+  }
+  .spotify-column:hover {
+      background: #1fb954;
+  }
+  
+  .spotify-column-res {
+      background: #1fb954;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .res-content {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  }
+  
+  .spotify-icon {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  
+   .spotify-column:hover .spotify-icon .spotify-icon-bg {
+      fill: #000000;
+  }
+  
+  .spotify-column:hover .spotify-icon .spotify-icon-fill {
+      fill: #ffffff;
+  }
+  
+  .youtube-column {
+    background: #ffffff;
+    align-items: center;
+  }
+  
+  .youtube-column:hover {
+      background: #ed3742;
+  }
+  
+  .youtube-icon {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    fill: #ed3742;
+  }
+  
+  .youtube-column:hover .youtube-icon {
+    fill: #ffffff;
+  }
+  
+  .youtube-column:hover .spotify-column {
+    background: #ffffff;
+  }
